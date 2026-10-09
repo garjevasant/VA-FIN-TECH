@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VA FinTech - Professional Financial Solutions. Expert services in Tax Filing, GST, Business Registration, Loans, Legal Services & more. Serving PAN INDIA with 24/7 support." />
+  <meta name="keywords" content="financial services, tax filing, GST registration, business loans, company registration, CA services, financial planning, Pune, India" />
+  <meta name="author" content="Garje Vasant - VA FinTech" />
+  <title>VA FinTech - Professional Financial Solutions | Tax, GST, Business & Legal Services</title>
+  <link rel="icon" type="image/png" href="images/va.png" />
+  <link rel="apple-touch-icon" href="images/va.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas class="cursor-particles" aria-hidden="true"></canvas>
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/va.png" alt="VA FinTech Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="logo-fallback" style="display:none;">VA</div>
+        <div class="logo-text">
+          <h1>
+            <span class="typing-text" id="typingText"></span>
+          </h1>
+          <p><span id="taglineText" class="tagline-type"></span></p>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#calculators">Calculators</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================== HERO SECTION ====================== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-shield-alt"></i> Trusted by 50,000+ Clients Across India
+      </div>
+      <h1 class="hero-title">No Queue. All You Need.</h1>
+      <p class="hero-subtitle">
+        Complete Financial, Legal & Business Solutions with Expert Guidance<br>
+        Serving PAN INDIA with Professional Excellence & Dedication
+      </p>
+      <div class="hero-value-strip" aria-label="VA FinTech value promise">
+        <div class="value-chip">
+          <i class="fas fa-tags"></i>
+          <span>Affordable Pricing</span>
+        </div>
+        <div class="value-chip">
+          <i class="fas fa-bolt"></i>
+          <span>Faster Service</span>
+        </div>
+        <div class="value-chip">
+          <i class="fas fa-user-slash"></i>
+          <span>No Agent Fees</span>
+        </div>
+        <div class="value-chip">
+          <i class="fas fa-receipt"></i>
+          <span>No Platform Fees</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="scrollToSection('contact')">
+          <i class="fas fa-rocket"></i> Get Started Today
+        </button>
+        <button class="btn btn-secondary" onclick="scrollToSection('services')">
+          <i class="fas fa-compass"></i> Explore Services
+        </button>
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge"><i class="fas fa-check-circle"></i> ISO Certified</div>
+        <div class="trust-badge"><i class="fas fa-check-circle"></i> 100% Secure</div>
+        <div class="trust-badge"><i class="fas fa-check-circle"></i> Expert Team</div>
+        <div class="trust-badge"><i class="fas fa-check-circle"></i> 24/7 Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== STATS SECTION ====================== -->
+  <section class="stats">
+    <div class="stats-container">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-number" data-target="50000">0</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-cogs"></i></div>
+        <div class="stat-number" data-target="150">0</div>
+        <div class="stat-label">Services Offered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-headset"></i></div>
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Support Available</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+        <div class="stat-number" data-target="99">0</div>
+        <div class="stat-label">Success Rate %</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="stat-number" data-target="1200">0</div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-award"></i></div>
+        <div class="stat-number" data-target="10" data-suffix="+">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SERVICES SECTION ====================== -->
+  <section id="services" class="services">
+    <h2 class="section-title">Our Comprehensive Services</h2>
+    <p class="section-subtitle">Professional Solutions for All Your Financial, Legal & Business Needs - Serving PAN INDIA</p>
+
+    <div class="services-container">
+      <!-- Tax & Compliance -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3 class="category-title">Tax & Compliance</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Income Tax Returns (ITR) - All Forms</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> GST Registration & Monthly Filing</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> TDS Returns & Compliance</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> PAN / TAN Applications</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Tax Planning & Advisory Services</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Tax Audit & Assessment Support</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Appeal & Litigation Assistance</li>
+        </ul>
+      </div>
+
+      <!-- Business Registration -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-building"></i></div>
+          <h3 class="category-title">Business Registration</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Private Limited Company Registration</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Partnership Firm Registration</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Sole Proprietorship Setup</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> LLP (Limited Liability Partnership)</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> MSME/Udyam Registration</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Import Export Code (IEC)</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Shop Act & Trade License</li>
+        </ul>
+      </div>
+
+      <!-- Financial Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><span class="rupee-symbol">₹</span></div>
+          <h3 class="category-title">Financial Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Balance Sheet Preparation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> CMA Data & Project Reports</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> CIBIL Score Improvement</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Business Loans (All Types)</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Personal & Home Loans</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Financial Planning & Advisory</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Investment Consultation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Fixed Deposit Advisory</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Credit Card Application</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Working Capital Solutions</li>
+        </ul>
+      </div>
+
+      <!-- Technical & Digital Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="category-title">Technical & Digital Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Website Development & Design</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Mobile App Development</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> E-commerce Platform Setup</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Digital Marketing Solutions</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> SEO & Social Media Marketing</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Branding & Logo Design</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Content Creation & Marketing</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Software Solutions</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Cloud & Hosting Services</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> IT Support & Maintenance</li>
+        </ul>
+      </div>
+
+      <!-- Ads, Promotion & Branding -->
+      <div class="service-category ads-branding-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="category-title">Ads, Promotion & Branding</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Facebook Ads Campaign Setup</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Instagram Ads & Reels Promotion</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Meta Business Manager Setup</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Lead Generation Campaigns</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Brand Promotion Strategy</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Social Media Creative Design</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Audience Targeting & Retargeting</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Campaign Reports & Optimization</li>
+        </ul>
+      </div>
+
+      <!-- Legal & Documentation -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-gavel"></i></div>
+          <h3 class="category-title">Legal & Documentation</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Trademark Registration</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Digital Signature Certificate (DSC)</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Legal Agreements & Contracts</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Copyright & Patent Filing</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Business Compliance Audit</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Property Documentation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Legal Consultation Services</li>
+        </ul>
+      </div>
+
+      <!-- Government Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-landmark"></i></div>
+          <h3 class="category-title">Government Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Passport Application & Renewal</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Visa Assistance (All Countries)</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> PF Withdrawal & Transfer</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Aadhaar & PAN Services</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Ration Card Application</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Government Schemes Registration</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Driving License Services</li>
+        </ul>
+      </div>
+
+      <!-- Accounting Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-calculator"></i></div>
+          <h3 class="category-title">Accounting Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Complete Bookkeeping</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Payroll Management</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Financial Statement Preparation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> MIS Reports Generation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Accounts Reconciliation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Budgeting & Forecasting</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Virtual CFO Services</li>
+        </ul>
+      </div>
+
+      <!-- Consulting Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="category-title">Consulting Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Business Strategy Consulting</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Startup Advisory & Mentoring</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Business Plan Preparation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Market Research & Analysis</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Risk Assessment & Mitigation</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Compliance & Regulatory Audit</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Process Optimization</li>
+        </ul>
+      </div>
+
+      <!-- Banking Services -->
+      <div class="service-category">
+        <div class="category-header">
+          <div class="category-icon"><i class="fas fa-university"></i></div>
+          <h3 class="category-title">Banking Services</h3>
+        </div>
+        <ul class="service-list">
+          <li class="service-item"><i class="fas fa-check-circle"></i> Current Account Opening</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Fixed Deposit Advisory</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Credit Card Application</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Bank Statement Analysis</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Letter of Credit Assistance</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Bank Guarantee Services</li>
+          <li class="service-item"><i class="fas fa-check-circle"></i> Working Capital Solutions</li>
+        </ul>
+      </div>
+
+      <div class="service-showcase-card" aria-label="VA FinTech fast affordable service visual">
+        <img src="images/services-banner.png" alt="Affordable financial and business services by VA FinTech">
+        <div class="showcase-content">
+          <span class="showcase-kicker"><i class="fas fa-bolt"></i> Fast. Simple. Affordable.</span>
+          <h3>Professional services without extra agent or platform charges.</h3>
+          <div class="showcase-points">
+            <span><i class="fas fa-tags"></i> Low Cost</span>
+            <span><i class="fas fa-clock"></i> Quick Delivery</span>
+            <span><i class="fas fa-shield-alt"></i> Trusted Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CALCULATORS SECTION ====================== -->
+  <section id="calculators" class="calculators">
+    <h2 class="section-title">Financial Calculators</h2>
+    <p class="section-subtitle">Smart tools to plan your finances effectively and make informed decisions</p>
+
+    <div class="calculator-buttons">
+      <button class="calc-btn" onclick="switchCalculator('emi')">
+        <i class="fas fa-calculator"></i> EMI Calculator
+      </button>
+      <button class="calc-btn" onclick="switchCalculator('sip')">
+        <i class="fas fa-chart-line"></i> SIP Calculator
+      </button>
+      <button class="calc-btn" onclick="switchCalculator('fd')">
+        <i class="fas fa-piggy-bank"></i> FD Calculator
+      </button>
+      <button class="calc-btn" onclick="switchCalculator('rd')">
+        <i class="fas fa-coins"></i> RD Calculator
+      </button>
+      <button class="calc-btn" onclick="switchCalculator('gst')">
+        <i class="fas fa-file-invoice-dollar"></i> GST Calculator
+      </button>
+    </div>
+
+    <!-- EMI Calculator -->
+    <div class="calculator-container" id="emiCalc">
+      <h3 class="calc-title"><i class="fas fa-calculator"></i> EMI Calculator</h3>
+      <div class="input-group">
+        <label class="input-label" for="loanAmount">Loan Amount (₹)</label>
+        <input type="number" id="loanAmount" class="input-field" placeholder="500000" value="500000">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="interestRate">Interest Rate (% per annum)</label>
+        <input type="number" id="interestRate" class="input-field" placeholder="10" value="10" step="0.1">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="loanTenure">Loan Tenure (Years)</label>
+        <input type="number" id="loanTenure" class="input-field" placeholder="5" value="5">
+      </div>
+      <button class="calculate-btn" onclick="calculateEMI()">
+        <i class="fas fa-calculator"></i> Calculate EMI
+      </button>
+      <div id="emiResult" class="result-box">
+        <div class="result-main">
+          <div class="result-label">Monthly EMI</div>
+          <div class="result-value" id="emiAmount">₹0</div>
+        </div>
+        <div class="result-details">
+          <div class="result-item">
+            <div class="result-item-label">Principal Amount</div>
+            <div class="result-item-value" id="principalAmount">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Total Interest</div>
+            <div class="result-item-value" id="totalInterest">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Total Amount</div>
+            <div class="result-item-value" id="totalAmount">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIP Calculator -->
+    <div class="calculator-container" id="sipCalc">
+      <h3 class="calc-title"><i class="fas fa-chart-line"></i> SIP Calculator</h3>
+      <div class="input-group">
+        <label class="input-label" for="sipAmount">Monthly Investment (₹)</label>
+        <input type="number" id="sipAmount" class="input-field" placeholder="5000" value="5000">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="sipReturn">Expected Return (% per annum)</label>
+        <input type="number" id="sipReturn" class="input-field" placeholder="12" value="12" step="0.1">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="sipTenure">Investment Period (Years)</label>
+        <input type="number" id="sipTenure" class="input-field" placeholder="10" value="10">
+      </div>
+      <button class="calculate-btn" onclick="calculateSIP()">
+        <i class="fas fa-chart-line"></i> Calculate Returns
+      </button>
+      <div id="sipResult" class="result-box">
+        <div class="result-main">
+          <div class="result-label">Maturity Value</div>
+          <div class="result-value" id="sipMaturity">₹0</div>
+        </div>
+        <div class="result-details">
+          <div class="result-item">
+            <div class="result-item-label">Total Invested</div>
+            <div class="result-item-value" id="sipInvested">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Total Gains</div>
+            <div class="result-item-value" id="sipGains">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FD Calculator -->
+    <div class="calculator-container" id="fdCalc">
+      <h3 class="calc-title"><i class="fas fa-piggy-bank"></i> Fixed Deposit Calculator</h3>
+      <div class="input-group">
+        <label class="input-label" for="fdAmount">Principal Amount (₹)</label>
+        <input type="number" id="fdAmount" class="input-field" placeholder="100000" value="100000">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="fdRate">Interest Rate (% per annum)</label>
+        <input type="number" id="fdRate" class="input-field" placeholder="7" value="7" step="0.1">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="fdTenure">Tenure (Years)</label>
+        <input type="number" id="fdTenure" class="input-field" placeholder="3" value="3">
+      </div>
+      <button class="calculate-btn" onclick="calculateFD()">
+        <i class="fas fa-piggy-bank"></i> Calculate Maturity
+      </button>
+      <div id="fdResult" class="result-box">
+        <div class="result-main">
+          <div class="result-label">Maturity Amount</div>
+          <div class="result-value" id="fdMaturity">₹0</div>
+        </div>
+        <div class="result-details">
+          <div class="result-item">
+            <div class="result-item-label">Principal</div>
+            <div class="result-item-value" id="fdPrincipal">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Interest Earned</div>
+            <div class="result-item-value" id="fdInterest">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RD Calculator -->
+    <div class="calculator-container" id="rdCalc">
+      <h3 class="calc-title"><i class="fas fa-coins"></i> Recurring Deposit Calculator</h3>
+      <div class="input-group">
+        <label class="input-label" for="rdAmount">Monthly Deposit (₹)</label>
+        <input type="number" id="rdAmount" class="input-field" placeholder="5000" value="5000">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="rdRate">Interest Rate (% per annum)</label>
+        <input type="number" id="rdRate" class="input-field" placeholder="6.5" value="6.5" step="0.1">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="rdTenure">Tenure (Years)</label>
+        <input type="number" id="rdTenure" class="input-field" placeholder="3" value="3">
+      </div>
+      <button class="calculate-btn" onclick="calculateRD()">
+        <i class="fas fa-coins"></i> Calculate Maturity
+      </button>
+      <div id="rdResult" class="result-box">
+        <div class="result-main">
+          <div class="result-label">Maturity Amount</div>
+          <div class="result-value" id="rdMaturity">₹0</div>
+        </div>
+        <div class="result-details">
+          <div class="result-item">
+            <div class="result-item-label">Total Deposited</div>
+            <div class="result-item-value" id="rdDeposited">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Interest Earned</div>
+            <div class="result-item-value" id="rdInterest">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GST Calculator -->
+    <div class="calculator-container" id="gstCalc">
+      <h3 class="calc-title"><i class="fas fa-file-invoice-dollar"></i> GST Calculator</h3>
+      <div class="input-group">
+        <label class="input-label" for="gstAmount">Amount (₹)</label>
+        <input type="number" id="gstAmount" class="input-field" placeholder="10000" value="10000">
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="gstRate">GST Rate (%)</label>
+        <select id="gstRate" class="input-select">
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label class="input-label" for="gstType">Calculation Type</label>
+        <select id="gstType" class="input-select">
+          <option value="exclusive">Exclusive (Add GST)</option>
+          <option value="inclusive">Inclusive (Remove GST)</option>
+        </select>
+      </div>
+      <button class="calculate-btn" onclick="calculateGST()">
+        <i class="fas fa-file-invoice-dollar"></i> Calculate GST
+      </button>
+      <div id="gstResult" class="result-box">
+        <div class="result-main">
+          <div class="result-label">Total Amount</div>
+          <div class="result-value" id="gstTotal">₹0</div>
+        </div>
+        <div class="result-details">
+          <div class="result-item">
+            <div class="result-item-label">Base Amount</div>
+            <div class="result-item-value" id="gstBase">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">CGST</div>
+            <div class="result-item-value" id="cgstAmount">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">SGST</div>
+            <div class="result-item-value" id="sgstAmount">₹0</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-label">Total GST</div>
+            <div class="result-item-value" id="totalGST">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CONTACT SECTION ====================== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Let's discuss how we can help your business grow and succeed</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <div>
+            <h4>Garje Vasant</h4>
+            <p>Founder & CEO of VA FinTech<br>Certified Financial Consultant<br>10+ Years of Experience in Financial & Business Consulting</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h4>Office Location</h4>
+            <p>VA FinTech Solutions<br>
+            Office No. 12, 3rd Floor, Pinnacle Pride Building,<br>
+            Near Hotel Surve, Sadashiv Peth, Pune - 411030<br>
+            Maharashtra, India</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h4>Phone & WhatsApp</h4>
+            <p><a href="tel:+918622006644">8622006644</a><br>
+            <a href="https://wa.me/918622006644?text=Hello%2C%20I%20came%20here%20from%20the%20VA%20FinTech%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener">WhatsApp Chat</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@vafintech.in">info@vafintech.in</a><br>
+            <a href="mailto:support@vafintech.in">support@vafintech.in</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>
+            Sunday: 10:00 AM - 4:00 PM<br>
+            <strong>Emergency Support: 24/7</strong></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name *</label>
+            <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone Number *</label>
+            <input type="tel" id="phone" class="form-input" placeholder="8622006644" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" title="Enter 10 digit mobile number" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="service">Select Service *</label>
+            <select id="service" class="form-input" required>
+              <option value="">Choose a service</option>
+              <option value="ITR Filing">Income Tax Return (ITR) Filing</option>
+              <option value="GST">GST Registration & Filing</option>
+              <option value="Company Registration">Company Registration</option>
+              <option value="Business Loan">Business Loan</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Trademark">Trademark Registration</option>
+              <option value="Accounting">Accounting & Bookkeeping</option>
+              <option value="Consulting">Business Consulting</option>
+              <option value="Other">Other Services</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="message">Your Message *</label>
+            <textarea id="message" class="form-input" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>VA FinTech</h3>
+        <p>Your trusted partner for comprehensive financial, legal, and business solutions. Serving clients across India with professional excellence and dedication.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+          <li><a href="#calculators"><i class="fas fa-chevron-right"></i> Calculators</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Popular Services</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> ITR Filing</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> GST Services</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Company Registration</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Business Loans</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Website Development</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Trademark</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><a href="tel:+918622006644"><i class="fas fa-phone"></i> 8622006644</a></li>
+          <li><a href="mailto:info@vafintech.in"><i class="fas fa-envelope"></i> info@vafintech.in</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 VA FinTech Solutions. All Rights Reserved. | ISO 9001:2015 Certified Company</p>
+      <p>Designed & Developed with <i class="fas fa-heart" style="color: #ef4444;"></i> by VA FinTech Digital Team</p>
+    </div>
+  </footer>
+
+  <!-- ====================== TOAST & BACK TO TOP ====================== -->
+  <div id="toast" class="toast">Message sent successfully!</div>
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/918622006644?text=Hello%2C%20I%20came%20here%20from%20the%20VA%20FinTech%20website%20and%20would%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat on WhatsApp"
+  >
+    <span class="whatsapp-help-text">Hi! May I help you?</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <div class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- ====================== JAVASCRIPT ====================== -->
+  <script src="js/main.js"></script>
+</body>  
+</html>
